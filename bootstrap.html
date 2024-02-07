@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Vehicle Consulting Services</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#">Vehicle</a>
+    <button type="buttton" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#H">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Loan Arrangement</a>
+            <a class="dropdown-item" href="#">Exchange Offer</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Other Services</a>
+          </div>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+
+      </ul>
+      <h1 style="color:aliceblue">SEARCH:</h1> <input type="text" id="fname">
+
+      <script>
+      document.getElementById("fname").addEventListener("focus", myFunction);
+      document.getElementById("fname").addEventListener("blur", ()=>
+      {
+        document.getElementById("fname").style.backgroundColor = "#fff";
+      });
+      
+      function myFunction() {
+        document.getElementById("fname").style.backgroundColor = "red";
+      }
+      </script>
+      
+    </div>
+  </nav>
+
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Offers Going on!</strong> Hurry up!.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+
+  <div class="container mt-3">
+    <div class="jumbotron">
+      <!-- eve -->
+      <h1 id="demo">WELCOME TO OUR CONSULTING SERVICE</h1>
+
+      <script>
+      document.getElementById("demo").addEventListener("mouseover", mouseOver);
+      document.getElementById("demo").addEventListener("mouseout", mouseOut);
+      
+      function mouseOver() {
+        document.getElementById("demo").style.color = "red";
+      }
+      
+      function mouseOut() {
+        document.getElementById("demo").style.color = "black";
+      }
+      </script>
+     
+      <p class="lead">In our Consulting we provide good services.we are selling pre owned luxury Vehicles at best price and
+      We are providing Loan facillities for Our Customers  </p>
+      <hr class="my-4">
+      <p>We are accessible all over Tamilnadu.so kindly check the google map for Exact Location</p>
+      <a class="btn btn-primary btn-lg"  id="btn1" href="#" role="button">View On Google Maps</a>
+    </div>
+
+
+
+  </div>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4 text-center">
+            <!--
+              onload
+            -->
+            <img src="images/bike.jpg" onload="loadImage()"class="bd-placeholder-img rounded-circle" width="140" height="140" >
+
+<script>
+function loadImage() {
+  alert("Image is loaded");
+}
+document.getElementById("btn1").addEventListener("click", ()=>{
+  window.open("https://www.google.com/maps/place/Mayura+Creations/@11.2720132,77.5972013,14.53z/data=!4m6!3m5!1s0x3ba96d2bdeefe06b:0x240251b96304521c!8m2!3d11.272359!4d77.6105839!16s%2Fg%2F11fs_8t946");
+});
+</script>
+
+
+
+            <!--
+              onload
+            -->
+            <!-- <p ondblclick="myFunction()">
+              <h2>Two Wheeler</h2></p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML +="We are providing all types of two wheeelers like Motorcycle,Scooter and Moped.It ranges from Rs15,000 upto Rs2LakhsThe Brands we are having are TVS,Hero,Bajaj,Yamaha....";
+}
+</script> -->
+
+            <h2>Two Wheeler</h2>
+            <p>We are providing all types of two wheeelers like Motorcycle,Scooter and Moped.It ranges from Rs15,000 upto Rs2Lakhs
+              The Brands we are having are TVS,Hero,Bajaj,Yamaha.... </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div>
+          <div class="col-md-4 text-center">
+              <img src="images/car.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
+            <h2>Four Wheeler</h2>
+            <p>The Main Motto of Our Company is to Make all People to afford Luxury Vehicles Like BMW,Benz,Audi,VolksWagen at Better 
+              Price.For more details Click View Details. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div>
+          <div class="col-md-4 text-center">
+              <img src="images/truck.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" />
+            <h2>Pickup Truck</h2>
+            <p>The Special Thing in Our Consulting is We are Providing Pick up Truck also.But most of the companies Wouldn't do It
+              For more Details Click View Details. </p
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+          </div>
+        </div>
+
+  </div>
+  <footer class="bg-dark text-white pt-5- pb-4">
+<div class="container text-center text-md-left">
+  <div class="row text-center text-md-left">
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h5 class="text-uppercase mb-4 font-weight-bold text-warning" id="about"></h5>
+<p>
+  Thank you for Visiting
+</p>
+    </div>
+
+  </div>
+
+</div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+   
+</body>
+
+</html>
